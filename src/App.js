@@ -8,28 +8,23 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-      <Switch>
-        <Route
-          path='/'
-          exact
-          strict
-          component={Dashboard}
-        />
-                <Route
-          path='/ingredients/:id'
-          exact
-          strict
-          component={Ingredients}
-        />
-
-              </Switch>
-
+        <Switch>
+          <Route
+            path='/'
+            exact
+            strict
+            component={Dashboard}
+          />
+          <Route
+            path='/ingredients/:id'
+            exact
+            strict
+            component={Ingredients}
+          />
+        </Switch>
       </Router>
-
     </div>
   )
 }
 
-export default App
-
-// https://developer.edamam.com/
+export default App;
