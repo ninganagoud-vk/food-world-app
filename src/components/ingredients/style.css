@@ -66,8 +66,8 @@ div>h2 {
     border-radius: 0.5rem;
     box-shadow: 2rem 3rem 5rem navajowhite;
     color: green;
-    flex-grow: 1;
     font-size: 12px;
+    height: 100px;
 }
 
 .show-coments-container {
@@ -75,4 +75,5 @@ div>h2 {
 }
 .ingredient-header{
     flex: 1;
+    overflow: hidden;
 }

@@ -23,6 +23,8 @@
   font-weight: 400;
   text-shadow: 0 0.5rem 0.5rem #555;
   color: #fff;
+  overflow:hidden;
+  height: 124px;
 }
 
 .recipe a {

@@ -29,7 +29,6 @@ const Ingredients = ({ recipe, location }) => {
                     {ingredients.map(item => <div className="ingridients-card">
                         <div className="ingredient-header">
                         <h3>{item.text}</h3>
-
                             </div>
 
                         <strong>Weight:<small>{item.weight.toFixed(2)} gms</small></strong></div>

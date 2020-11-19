@@ -7,7 +7,7 @@ import './style.css';
 export const Comment = ({ comment, showCommentsId }) => {
   return (
     <>
-      {comment.id == showCommentsId && comment.comments.map(item => <div className="comment-container" >
+      {comment.id === showCommentsId && comment.comments.map(item => <div className="comment-container" >
         <UserOutlined style={{
           color: 'green'
         }} />

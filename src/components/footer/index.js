@@ -27,23 +27,23 @@ const Footer = () => {
                 <div className="col">
                     <h4>SOCIAL LINKS</h4>
                     <ul className="list-unstyled">
-                        <li>            <a href="https://www.youtube.com" target="_blank"
+                        <li>            <a href="https://www.youtube.com" target="_blank" rel="noreferrer"
                             className="social">
                             <YoutubeFilled style={{ color: "#eb3223", fontSize: '20px' }} />
                         </a>
                         </li>
-                        <li>            <a href="https://www.facebook.com" target="_blank"
+                        <li>            <a href="https://www.facebook.com" target="_blank" rel="noreferrer"
                             className="social">
                             <FacebookFilled style={{ color: "#4968ad", fontSize: '20px' }} />
                         </a>
                         </li>
-                        <li>            <a href="https://www.twitter.com" target="_blank"
+                        <li>            <a href="https://www.twitter.com" target="_blank" rel="noreferrer"
                             className="social">
                             <TwitterOutlined style={{ color: "#49a1eb", fontSize: '20px' }} />
                         </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com" target="_blank"
+                            <a href="https://www.instagram.com" target="_blank" rel="noreferrer"
                                 className="social">
                                 <InstagramFilled style={{ color: "#C13584", fontSize: '20px' }} />
                             </a>

@@ -1,52 +1,52 @@
-import React,{useEffect} from 'react';
-import { withRouter,Link } from "react-router-dom";
+import React from 'react';
+import { withRouter } from "react-router-dom";
 import { connect } from 'react-redux';
-import {actionSetId} from '../../store/actions/action'
+import { actionSetId } from '../../store/actions/action'
 import ShowComments from '../comments/showComments';
 import './style.css'
 
-const Recipe = ({recipe,id,showCommentsId,history}) => {
+const Recipe = ({ recipe, id, showCommentsId, history }) => {
 
-  const handleClick=()=>{
+  const handleClick = () => {
     actionSetId(showCommentsId)
-   let url_label= recipe.recipe.label.split(/[ ,]+/).join('-')
-    setTimeout(()=>{
+    let url_label = recipe.recipe.label.split(/[ ,]+/).join('-')
+    setTimeout(() => {
       history.push({
         pathname: `/ingredients/${url_label}`,
-        state: {recipe:{recipe:recipe.recipe},id:showCommentsId}
+        state: { recipe: { recipe: recipe.recipe }, id: showCommentsId }
       })
-    },3000)
+    }, 1000)
   }
-    const{label,image,url,ingredients}=recipe.recipe
-    return (
-        <div className="recipe">
-           <h2>{label}</h2>
-           <div className="recipe-image">
-           <img src={image} alt={label}/>
+  const { label, image } = recipe.recipe
+  return (
+    <div className="recipe">
+      <h2>{label}</h2>
+      <div className="recipe-image">
+        <img src={image} alt={label} />
 
-           </div>
-            <div className="recipe-details" >
-            <p>
-              {label} Italian  
+      </div>
+      <div className="recipe-details" >
+        <p>
+          {label} Italian
             </p>
-            <p>
-        <small>Available:</small>9AM-10PM
+        <p>
+          <small>Available:</small>9AM-10PM
             </p>
-            <p>
-              Open Now  
+        <p>
+          Open Now
             </p>
-            <p>
-              Best Of benaglore  
+        <p>
+          Best Of benaglore
             </p>
-            </div>
+      </div>
 
-<ShowComments showCommentsId={showCommentsId}/>
-            <button onClick={handleClick
-}>
-                View Recipe
+      <ShowComments showCommentsId={showCommentsId} />
+      <button onClick={handleClick
+      }>
+        View Recipe
             </button>
-        </div>
-    )
+    </div>
+  )
 }
 
 const mapDispatchToProps = {
@@ -55,4 +55,3 @@ const mapDispatchToProps = {
 export default withRouter(
   connect(null, mapDispatchToProps)(Recipe)
 );
-
