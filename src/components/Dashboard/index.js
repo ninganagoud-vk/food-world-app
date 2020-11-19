@@ -21,7 +21,7 @@ const Dashboard = ({ error, serachedItems,
     const [isEmptyQuery, setisEmptyQuery] = useState("")
     useEffect(() => {
         actionSetlocalStorage(comments)
-        // actionGetSearchedItems("pizza")
+        actionGetSearchedItems("pizza")
 
     }, [actionSetlocalStorage, actionGetSearchedItems])
 
