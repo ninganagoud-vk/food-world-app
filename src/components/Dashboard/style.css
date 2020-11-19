@@ -1,0 +1,29 @@
+* {
+    margin: 2px;
+}
+
+.root-container {
+    font-size: 24px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-loader {
+    position: relative;
+    bottom: 70px;
+}
+
+.flex-nav {
+    background-color: indianred;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    flex: 1 1 5rem;
+}
+
+@media all and (max-width:540px) {
+    .main-content {
+        flex-direction: column;
+    }
+}

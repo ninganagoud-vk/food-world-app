@@ -1,0 +1,9 @@
+@import '~antd/dist/antd.css';
+
+.comment-container{
+    display: flex;
+     align-items: center
+}
+.comment-text{
+font-size: 15px;    
+}

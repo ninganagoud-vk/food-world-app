@@ -1,0 +1,78 @@
+.container {
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+}
+
+.dish-image {
+    height: 50%;
+    background-color: rgba(161, 161, 161, 0.7);
+    margin: 10px;
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.dish-image>div {
+    width: 50%;
+    height: 300px;
+    overflow: hidden
+}
+
+.dish-image img {
+    box-shadow: 2rem 3rem 5rem #656556;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    flex: 1;
+    border-radius: 0.5rem;
+}
+
+div>h2 {
+    background-color: rgba(161, 161, 161, 0.7);
+    padding: 0.3rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-shadow: 0 0.5rem 0.5rem #555;
+    color: green;
+    margin: 10px;
+    border-radius: 0.5rem;
+}
+
+.ingrids {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: rgba(161, 161, 161, 0.7);
+    margin: 10px;
+    border-radius: 0.5rem;
+}
+
+.ingridients-card {
+    width: 8rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 2rem 3rem 5rem navajowhite;
+    color: green;
+    flex-grow: 1;
+    font-size: 12px;
+}
+
+.show-coments-container {
+    padding: 30px;
+}
+.ingredient-header{
+    flex: 1;
+}

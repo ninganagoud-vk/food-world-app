@@ -1,0 +1,27 @@
+.main-footer {
+  background-color: #676767;
+  padding: 1rem;
+  text-align: center;
+}
+
+.col ul {
+  list-style-type: none;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}

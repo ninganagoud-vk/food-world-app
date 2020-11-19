@@ -1,0 +1,9 @@
+.main-content {
+    flex-direction: column;
+}
+.flex-article {
+    text-align: center;
+    display: flex;
+    background-color: rgb(168, 167, 170);
+    flex-wrap: wrap;
+}
