@@ -13,8 +13,8 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_COMMENT:
       let temp = [...newListState.comments]
-      newListState.comments.map(item => {
-        if (item.id == action.comment.id) {
+      newListState.comments.forEach(item => {
+        if (item.id === action.comment.id) {
           let temparr = [...temp[item.id - 1].comments]
           temparr = [{ ...action.comment.obj }, ...temparr]
           let dumm = { ...item }
@@ -47,6 +47,7 @@ const reducer = (state = initialState, action) => {
         serachedItems: action.items,
         error: null
       };
+      break;
     case ERROR:
       newListState = {
         ...newListState,
