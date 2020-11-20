@@ -8,10 +8,10 @@ import Main from '../main';
 import {
     actionAddComment, actionSetlocalStorage,
     actionGetSearchedItems, actionReset
-} from '../../store/actions/action'
-import { comments } from '../localStorage'
-import SpinLoader from '../loader';
-import AlertMessage from '../alertMessage';
+} from '../../../store/actions/action'
+import { comments } from '../../../assets/commentsList'
+import SpinLoader from '../../loader';
+import AlertMessage from '../../alertMessage';
 
 const Dashboard = ({ error, serachedItems,
     actionReset, actionGetSearchedItems, actionSetlocalStorage }) => {

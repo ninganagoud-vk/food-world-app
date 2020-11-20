@@ -12,20 +12,20 @@ const reducer = (state = initialState, action) => {
   let newListState = { ...state };
   switch (action.type) {
     case ADD_COMMENT:
-      let temp = [...newListState.comments]
+      let commentsList = [...newListState.comments]
       newListState.comments.forEach(item => {
         if (item.id === action.comment.id) {
-          let temparr = [...temp[item.id - 1].comments]
-          temparr = [{ ...action.comment.obj }, ...temparr]
-          let dumm = { ...item }
-          dumm = { ...dumm, comments: temparr }
-          temp.splice(item.id - 1, 1, { id: dumm.id, comments: dumm.comments })
+          let selectedComments = [...commentsList[item.id - 1].comments]
+          selectedComments = [{ ...action.comment.obj }, ...selectedComments]
+          let commentObject = { ...item }
+          commentObject = { ...commentObject, comments: selectedComments }
+          commentsList.splice(item.id - 1, 1, { id: commentObject.id, comments: commentObject.comments })
         }
       })
-      localStorage.setItem('comments', JSON.stringify(temp));
+      localStorage.setItem('comments', JSON.stringify(commentsList));
       newListState = {
         ...state,
-        comments: temp
+        comments: commentsList
       };
       break;
     case SET_LOCAL_STORAGE:

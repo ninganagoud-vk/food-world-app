@@ -1,5 +1,5 @@
 import React from 'react';
-import Recipe from '../recipe';
+import Recipe from '../../recipe';
 import './style.css';
 
   const Main = ({recipes}) => {
