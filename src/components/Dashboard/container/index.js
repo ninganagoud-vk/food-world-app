@@ -59,11 +59,11 @@ const Dashboard = ({ error, serachedItems,
         <div className="root-container">
             {(isEmptyQuery !== "") ? <AlertMessage alert={isEmptyQuery} /> : null}
             {isloading ?
-                <SpinLoader text={"Fetching Your Favorite items."} /> :
+                <SpinLoader text={"Fetching Your Favorite Recipies."} /> :
                 <>
                     <Header onSubmit={onSubmit} onChange={onChange} query={query} />
                     {!recipes.length ? <div className="main-loader">
-                        <SpinLoader text={"Fetching items."} />
+                        <SpinLoader text={"Loading Recipies."} />
                     </div> : <Main recipes={recipes} />}
                     <Footer />
                 </>
