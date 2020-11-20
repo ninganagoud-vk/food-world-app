@@ -17,7 +17,6 @@ const CommentBox = ({ actionAddComment, id }) => {
     // Make sure name and comment boxes are filled
     if (name && comment) {
       const commentObject = { obj: { name, comment }, id };
-      console.log('commentObject', commentObject)
       actionAddComment(commentObject);
       // Clear input fields
       e.target.elements.comment.value = '';

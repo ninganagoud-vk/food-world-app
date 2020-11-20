@@ -6,7 +6,7 @@ import './style.css';
     return (
         <main className="main-content">
         <article className="flex-article">
-            {recipes !== [] && recipes.map((recipe,index) => <Recipe recipe={recipe} showCommentsId={index+1}/>)}
+            {recipes !== [] && recipes.map((recipe,index) => <Recipe key={index+1} recipe={recipe} showCommentsId={index+1}/>)}
         </article>
     </main>
 )

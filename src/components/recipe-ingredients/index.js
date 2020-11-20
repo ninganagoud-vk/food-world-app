@@ -26,7 +26,7 @@ const Ingredients = ({ recipe, location }) => {
                     <h2>INGREDIRNTS</h2>
                 </div>
                 <div className="ingrids">
-                    {ingredients.map(item => <div className="ingridients-card">
+                    {ingredients.map((item,index) => <div className="ingridients-card" key={index}>
                         <div className="ingredient-header">
                         <h3>{item.text}</h3>
                             </div>

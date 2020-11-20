@@ -30,7 +30,6 @@ export const actionGetSearchedItems = (query) => async dispatch => {
   try {
     const foodSearchUrl = `${FOOD_URL}?q=${query}&app_id=${API_ID}&app_key=${API_KEY}`;
     const items = await Axios.get(foodSearchUrl)
-    console.log('itemsss',items)
     if (items && items.data && (items.data.hits.length === 0)) {
       dispatch(ErrorActionCreator());
       throw new Error("Sorry there Were no such items")
